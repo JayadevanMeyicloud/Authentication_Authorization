@@ -8,3 +8,5 @@ bcrypt==4.0.1
 python-dotenv
 pydantic-settings
 email-validator
+python-
+python-jose[cryptography]
