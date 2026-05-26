@@ -48,10 +48,18 @@ project/
 ├── models.py
 ├── schemas.py
 ├── auth.py
+├── response.py
 │
 ├── routers/
+│   └── user_router.py
+│
 ├── services/
+│   └── user_services.py
+│
 ├── utils/
+│   ├── decorators.py
+│   ├── helper.py
+│   └── logger.py
 │
 └── requirements.txt
 ```
