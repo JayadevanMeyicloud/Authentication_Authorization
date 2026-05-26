@@ -1,29 +1,28 @@
 from fastapi import HTTPException, status
-from utils.logger import logging
-from models import User, UserRole
-from response import success_response
-from schemas import (
+from app.utils.logger import logging
+from app.utils.decorators import(
+    handle_db_exceptions,
+    transactional
+)
+from app.models.user_models import User, UserRole
+from app.schemas.user_schemas import (
     UserResponse,
     UserData,
     AllUsersResponse,
     PaginatedUserResponse,
     PaginationMeta
 )
-
-from auth import (
+from app.core.response import success_response
+from app.core.auth import (
     hash_password,
     verify_password,
     create_access_token
 )
-from utils.helpers import (
+from app.repository.user_repository import (
     get_user_by_email,
     get_user_by_id
 )
-from utils.decorators import(
-    handle_db_exceptions,
-    transactional
-)
-from response import success_response
+
 
 
 @transactional

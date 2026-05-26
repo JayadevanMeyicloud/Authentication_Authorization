@@ -1,4 +1,4 @@
-from models import User
+from app.models.user_models import User
 
 
 def get_user_by_email(email, db):

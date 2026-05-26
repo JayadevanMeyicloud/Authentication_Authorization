@@ -41,26 +41,40 @@ A FastAPI backend project with:
 # Project Structure
 
 ```bash
-project/
+AUTH_PROJECT/
 │
-├── main.py
-├── database.py
-├── models.py
-├── schemas.py
-├── auth.py
-├── response.py
+├── app/
+│   │
+│   ├── core/
+│   │   ├── auth.py
+│   │   └── response.py
+│   │
+│   ├── models/
+│   │   └── user_models.py
+│   │
+│   ├── repository/
+│   │   └── user_repository.py
+│   │
+│   ├── routers/
+│   │   └── user_router.py
+│   │
+│   ├── schemas/
+│   │   └── user_schemas.py
+│   │
+│   ├── services/
+│   │   └── user_service.py
+│   │
+│   ├── utils/
+│   │   └── decorators.py
+│   │
+│   ├── config.py
+│   ├── database.py
+│   └── main.py
 │
-├── routers/
-│   └── user_router.py
-│
-├── services/
-│   └── user_services.py
-│
-├── utils/
-│   ├── decorators.py
-│   ├── helper.py
-│   └── logger.py
-│
+├── .env
+├── .gitignore
+├── LOG_FILE
+├── README.md
 └── requirements.txt
 ```
 

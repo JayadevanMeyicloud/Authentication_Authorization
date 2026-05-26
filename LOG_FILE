@@ -1,0 +1,15 @@
+2026-05-26 16:19:49,516 - INFO - Application started
+2026-05-26 16:19:55,580 - INFO - Application started
+2026-05-26 16:21:46,055 - INFO - User registered successfully: sathya@gmail.com
+2026-05-26 16:25:09,178 - INFO - User updated successfully: sathyadanasekaran@gmail.com
+2026-05-26 16:25:55,026 - INFO - User patched successfully: sathyadanasekaran@gmail.com
+2026-05-26 16:27:32,904 - INFO - Fetching all users
+2026-05-26 16:27:33,776 - INFO - Total users fetched: 32
+2026-05-26 16:28:21,203 - INFO - User deleted successfully: test4@gmail.com
+2026-05-26 16:28:29,410 - INFO - Fetching all users
+2026-05-26 16:28:30,273 - INFO - Total users fetched: 31
+2026-05-26 16:34:47,954 - INFO - Application started
+2026-05-26 16:34:53,628 - INFO - Application started
+2026-05-26 16:37:07,207 - INFO - Fetching all users
+2026-05-26 16:37:08,081 - INFO - Total users fetched: 31
+2026-05-26 16:38:35,434 - INFO - User registered successfully: srinivasan@gmail.com

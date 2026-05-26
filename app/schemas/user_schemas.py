@@ -1,7 +1,7 @@
 
 from pydantic import BaseModel, EmailStr
 from typing import Optional
-from models import UserRole
+from app.models.user_models import UserRole
 
 # Request Schemas
 

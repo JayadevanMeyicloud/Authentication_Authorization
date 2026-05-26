@@ -15,7 +15,7 @@ from datetime import (
     timezone
 )
 
-from config import settings
+from app.config import settings
 
 #JWT settings
 SECRET_KEY = settings.SECRET_KEY

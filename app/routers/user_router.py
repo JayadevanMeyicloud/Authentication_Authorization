@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from models import User,UserRole
-from database import get_db
-from schemas import (
+from app.models.user_models import User,UserRole
+from app.database import get_db
+from app.schemas.user_schemas import (
     UserCreate,
     UserLogin,
     UserUpdate,
@@ -14,7 +14,7 @@ from schemas import (
     PaginationMeta
 )
 
-from services.user_service import (
+from app.services.user_service import (
     register_user,
     login_user,
     get_profile_service,
@@ -28,7 +28,7 @@ from services.user_service import (
     change_password_service
 )
 
-from auth import verify_access_token, require_role
+from app.core.auth import verify_access_token, require_role
 
 router = APIRouter()
 
